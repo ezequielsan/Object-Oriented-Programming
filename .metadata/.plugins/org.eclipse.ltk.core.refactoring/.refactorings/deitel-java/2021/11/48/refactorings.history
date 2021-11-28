@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ch03.AccountTeste&apos; to &apos;AccountTest&apos;&#x0D;&#x0A;- Original project: &apos;deitel-java&apos;&#x0D;&#x0A;- Original element: &apos;ch03.AccountTeste&apos;&#x0D;&#x0A;- Renamed element: &apos;ch03.AccountTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AccountTeste&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ch03{AccountTeste.java[AccountTeste" matchStrategy="1" name="AccountTest" qualified="false" references="true" similarDeclarations="false" stamp="1637961583576" textual="false" version="1.0"/>
+</session>

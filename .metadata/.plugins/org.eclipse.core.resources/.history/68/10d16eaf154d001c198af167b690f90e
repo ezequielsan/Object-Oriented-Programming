@@ -1,0 +1,16 @@
+package relacionamentos_exercicios;
+
+public class Produto {
+	private int code;
+	private String name;
+	private String description;
+	private float value;
+	
+	Produto(int code, String name, String description, float value) {
+		this.code = code;
+		this.name = name;
+		this.description = description;
+		this.value = value ;
+	}
+		
+}

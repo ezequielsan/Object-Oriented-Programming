@@ -1,0 +1,26 @@
+package enumeracoes;
+
+// Como o enum é na prática
+enum Color { RED, GREEN, BLUE; };
+
+// Como o enum é na verdade implementado por debaixo dos panos
+class ColorTwo {
+	public static final ColorTwo RED = new ColorTwo();
+	public static final ColorTwo GREEN = new ColorTwo();
+	public static final ColorTwo BLUE = new ColorTwo();
+
+}
+
+public class Teste {
+    public static void main(String[] args) {
+		Color r = Color.RED;
+		Color g = Color.GREEN;
+		Color b = Color.BLUE;
+		
+		ColoTwo r2 = ColorTwo.RED;
+		
+		System.out.println(r);
+		System.out.println(g);
+		System.out.println(b);
+	}
+}

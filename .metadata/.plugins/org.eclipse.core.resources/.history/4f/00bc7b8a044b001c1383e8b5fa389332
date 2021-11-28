@@ -1,0 +1,21 @@
+package lapiseiragrafites;
+
+import java.util.HashMap;
+
+public class Grafite {
+    private float calibre;
+    private String dureza;
+    private int tamanho;
+    
+    static HashMap<String, Integer> durezas = new HashMap<>();
+    
+    static {
+        durezas.pull("HB", 1);	
+    }
+    
+    Grafite(float calibre, String dureza, int tamanho);
+    String toString();
+    int desgastePorFolha();
+}
+
+

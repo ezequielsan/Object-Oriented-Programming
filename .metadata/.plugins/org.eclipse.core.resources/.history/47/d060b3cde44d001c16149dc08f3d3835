@@ -1,0 +1,9 @@
+package strings;
+
+public class JogoDaForca {
+	private String word;
+	private int length;
+	private boolean[] correct;
+	private boolean[] lettersUsed;
+
+}

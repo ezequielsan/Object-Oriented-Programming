@@ -1,0 +1,68 @@
+package lapiseira;
+
+import java.util.Locale;
+
+class Lapiseira {
+    private float calibre;
+    private Grafite grafite;
+    
+    Lapiseira(float calibre) {
+    	if(calibre < 0) { 
+    		throw new RuntimeException("fail: nao e permitido valores negativos");
+    	}
+    	else {
+    		this.calibre = calibre;
+    	}
+    }
+     
+    public boolean inserir(Grafite grafite) {
+    	if(this.grafite == null) {
+    		if(grafite.getCalibre() == this.calibre) {
+    			this.grafite = grafite;
+    			return true;
+    		}
+    		else {
+    			System.out.println("fail: calibre incompatível");
+        	    return false;
+    		}
+    	}
+    	else {
+    	    System.out.println("fail: ja existe grafite");
+    	    return false;
+    	}	
+    }
+
+    public Grafite remover() {
+    	Grafite aux = this.grafite;
+    	
+    	if(this.grafite != null) {
+    		this.grafite = null;
+    	}
+    	else {
+    		System.out.println("fail: não existe grafite a ser removido");
+    	}
+    	return aux;
+    }
+    
+    void escrever() {
+    	
+    }
+    
+    public String toString() {
+    	return String.format("calibre: " + this.calibre + ", grafite: " + grafite);
+    }
+    
+    public static void main(String[] args) {
+    	Locale.setDefault(Locale.US);
+    	
+    	Lapiseira lap = new Lapiseira(1.3f);
+    	
+    	lap.inserir(new Grafite(1.3f, "6B", 100));
+    	lap.remover();
+    	
+       lap.inserir(new Grafite(1.3f, "2B", 80));
+
+    	
+    	System.out.println(lap);
+	}
+}

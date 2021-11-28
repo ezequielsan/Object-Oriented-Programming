@@ -1,0 +1,16 @@
+package relacionamentos;
+
+public class Socio {
+	private String nome;
+	
+	Socio(String nome) {
+		setNome(nome);
+	}
+	
+	public setNome(String nome) { 
+		if(nome == null || nome.length() == 0) {
+			throw new RuntimeException();
+		}
+	}
+
+}

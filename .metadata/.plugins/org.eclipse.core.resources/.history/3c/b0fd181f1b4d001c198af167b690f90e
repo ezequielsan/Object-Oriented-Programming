@@ -1,0 +1,11 @@
+package enumeracoes;
+
+enum Color { RED, GREEN, BLUE; }
+
+public class Teste {
+    public static void main(String[] args) {
+		Color r = Color.RED;
+		Color g = Color.GREEN;
+		System.out.println(c);
+	}
+}

@@ -1,0 +1,6 @@
+package relacionamentos_exercicios;
+
+public class Pedido {
+    private String id;
+    
+}

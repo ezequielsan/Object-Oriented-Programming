@@ -1,0 +1,13 @@
+package enumeracoes;
+
+public enum Semana {
+    DOM(1, "Domingo"), SEG(2, "Segunda"), TER(3, "Terça"), 
+    QUA(4, "Quarta"), QUI(5, "Quinta"), SEX(6, "Sexta"), SAB(7, "Sabado");
+	
+	private static int dia;
+	private static String nome;
+	
+	Semana(int value, String nome) {
+		
+	}
+}

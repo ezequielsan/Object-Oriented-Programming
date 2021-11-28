@@ -1,0 +1,24 @@
+package trampoline_linkedlist;
+
+public class Kid {
+    private int age;
+    private String name;
+    
+    public Kid(String name, int age) {
+    	this.name = name;
+    	this.age = age;
+    }
+    
+    public int getAge() {
+    	return age;
+    }
+    
+    String getName() {
+    	
+    }
+//    void setAge(int age);
+//    public void setName(String name); //gs
+//    public String toString();
+}
+
+

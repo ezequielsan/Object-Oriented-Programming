@@ -1,0 +1,14 @@
+package relacionamentos_exercicios;
+
+public class itemPedido {
+	private int quantidade;
+	private Produto product ;
+	
+	public itemPedido() {
+	}
+	
+	public double subTotal() {
+		return 
+	}
+
+}

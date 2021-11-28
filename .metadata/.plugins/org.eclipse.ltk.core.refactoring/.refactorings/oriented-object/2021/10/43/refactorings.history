@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Data.java&apos; to &apos;atividades/src/atividade_02&apos;&#x0D;&#x0A;- Original project: &apos;oriented-object&apos;&#x0D;&#x0A;- Destination element: &apos;atividades/src/atividade_02&apos;&#x0D;&#x0A;- Original element: &apos;aula01.Data.java&apos;" description="Copy compilation unit" destination="=atividades/src&lt;atividade_02" element1="/src&lt;aula01{Data.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1634651542745" units="1" version="1.0"/>
+</session>

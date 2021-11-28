@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\ezequ\OneDrive\Área de Trabalho\Faculdade\Programação orientada a objetos\java-projects\.metadata\.plugins\org.eclipse.jdt.core
+2349477345.index
+3883950653.index
+2947599012.index
+1102349192.index
+1865797976.index
+2497617656.index

@@ -1,0 +1,88 @@
+package trampoline_linkedlist;
+
+import java.util.LinkedList;
+
+public class Trampoline{
+    private LinkedList<Kid> waiting;
+    private LinkedList<Kid> playing;
+    
+    public Trampoline() {
+    	waiting = new LinkedList<>();
+    	playing = new LinkedList<>();
+    }
+    
+    //remove and return the Kid with this name or null
+    private Kid remove_kid(String name, LinkedList<Kid> list) {
+    	return list.remove();
+    }
+//    
+    //insere na lista de espera
+    public void arrive(Kid kid) {
+    	waiting.add(kid);
+    }
+//    
+    //remove da lista de espera e insere na lista playing
+    public void in() {
+    	playing.add(remove_kid(waiting.getFirst().getName(), waiting));
+    }
+
+    //remove de playing para wainting
+    public void out() {
+    	waiting.add(remove_kid(playing.getFirst().getName(),  playing));
+    }
+//    
+//    //remove do parquinho
+//    public Kid remove(String name);
+//    
+    public String toString() {
+    	String format = "=> ";
+    	
+    	for(int i = waiting.size() - 1; i >= 0; i--) {
+    		format += waiting.get(i) + " ";
+    	}
+    	
+    	format += "=> [ ";
+    	
+    	for(int i = playing.size() - 1; i >= 0; i--) {
+    		format += playing.get(i) + " ";
+    	}
+    	
+    	return format + "]";
+    }
+    
+    public static void main(String[] args) {
+    	Trampoline t = new Trampoline();
+    	t.arrive(new Kid("mario", 5));
+    	t.arrive(new Kid("livia", 4));
+    	t.arrive(new Kid("luana", 3));
+    	t.arrive(new Kid("jó", 3));
+    	
+    	System.out.println(t);
+    	
+    	t.in();
+    	
+    	System.out.println(t);
+    	
+    	t.in();
+    	
+    	System.out.println(t);
+    	
+    	t.in();
+    	
+    	System.out.println(t);
+    	
+    	t.in();
+    	
+    	System.out.println(t);
+    	
+    	t.out();
+    	
+    	System.out.println(t);
+    	
+    	t.out();
+    	
+    	System.out.println(t);
+    	
+
+	}
+}

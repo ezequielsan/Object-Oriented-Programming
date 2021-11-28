@@ -1,0 +1,11 @@
+package enumeracoes;
+
+enum Season {
+	SPRING, SUMMER, FALL, WINTER;
+}
+
+public class SeasonsTest {
+    public static void main(String[] args) {
+		Season s1 = Season.FALL;
+	}
+}

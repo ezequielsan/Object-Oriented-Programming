@@ -1,0 +1,16 @@
+package strings;
+
+public class JogoDaForca {
+	private String word;
+	private int length;
+	private boolean[] correct;
+	private boolean[] lettersUsed;
+	
+	public JogoDaForca(String word) {
+	    this.word = word;
+	    this.length= word.length();
+	    this.correct = new boolean[length];
+	    this.lettersUsed = new boolean[26];
+	}
+
+}

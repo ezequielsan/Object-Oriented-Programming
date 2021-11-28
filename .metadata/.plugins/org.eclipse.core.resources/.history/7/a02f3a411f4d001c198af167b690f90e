@@ -1,0 +1,15 @@
+package enumeracoes;
+
+enum Season {
+	SPRING, SUMMER, FALL, WINTER;
+}
+
+public class SeasonsTest {
+    public static void main(String[] args) {
+		Season s1 = Season.FALL;
+		Season s2 = Season.valueOf("WINTER");
+		Season s3 = Season.valueOf("FALL");
+		
+		System.out.println("%s5n5s%n%s");
+	}
+}

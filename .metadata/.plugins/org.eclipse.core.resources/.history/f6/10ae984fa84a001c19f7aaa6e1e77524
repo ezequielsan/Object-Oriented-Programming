@@ -1,0 +1,14 @@
+package relacionamentos;
+
+public class AppClube {
+	public static void main(String[] args) {
+		Clube seresteiros = new Clube();
+		
+		Socio socio1 = new Socio("Fulano");
+		Socio socio2 = new Socio("Ciclano");
+		Socio socio3 = new Socio("Beltrano");
+		
+		System.out.println(seresteiros);
+	}
+
+}

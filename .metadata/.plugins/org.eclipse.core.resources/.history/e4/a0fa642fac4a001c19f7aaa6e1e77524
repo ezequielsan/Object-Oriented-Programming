@@ -1,0 +1,10 @@
+package relacionamentos_bike;
+
+public class App {
+	public static void main(String[] args) {
+		Bicicleta bike = new Bicicleta(new Roda(), null, null, null, null);
+		
+		System.out.println(bike);
+	}
+
+}

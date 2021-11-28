@@ -1,0 +1,9 @@
+package relacionamentos;
+
+import java.util.ArrayList;
+
+public class Clube {
+	private ArrayList<Socio> sociedade;
+	
+
+}

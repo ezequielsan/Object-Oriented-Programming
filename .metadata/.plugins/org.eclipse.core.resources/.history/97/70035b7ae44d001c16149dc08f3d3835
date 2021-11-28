@@ -1,0 +1,7 @@
+package strings;
+
+public class JogoDaForca {
+	private String word;
+	private int length;
+
+}

@@ -1,0 +1,12 @@
+package enumeracoes;
+
+class ColorThree {
+	public static final ColorThree RED = new ColorThree();
+	public static final ColorThree GREEN = new ColorThree();
+	public static final ColorThree BLUE = new ColorThree();
+}
+
+public class Teste2 {
+	ColorThree c = ColorThree.RED;
+
+}

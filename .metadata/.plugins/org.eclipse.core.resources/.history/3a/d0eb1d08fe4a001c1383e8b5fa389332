@@ -1,0 +1,71 @@
+package lapiseira;
+
+class Lapiseira {
+    private float calibre;
+    private Grafite grafite;
+    
+    Lapiseira(float calibre) {
+    	if(calibre < 0) { 
+    		throw new RuntimeException("fail: nao e permitido valores negativos");
+    	}
+    	else {
+    		this.calibre = calibre;
+    	}
+    }
+     
+    public boolean inserir(Grafite grafite) {
+    	if(this.grafite == null) {
+    		if(grafite.getCalibre() == this.calibre) {
+    			this.grafite = grafite;
+    			return true;
+    		}
+    		else {
+    			System.out.println("fail: calibre incompatível");
+        	    return false;
+    		}
+    	}
+    	else {
+    	    System.out.println("fail: ja existe grafite");
+    	    return false;
+    	}	
+    }
+    
+    public Grafite remover() {
+    	Grafite aux = this.grafite;
+    	
+    	if(this.grafite != null) {
+    		this.grafite = null;
+    	}
+    	else {
+    		System.out.println("fail: não existe grafite a ser removido");
+    	}
+    	return aux;
+    }
+    
+    public void escrever() {
+    	if(grafite == null) {
+    		System.out.println("fail: nao ha grafite para escrever");
+    	}
+    	else {
+    		
+    		if(grafite.getTamanho() - grafite.desgastePorFolha() < 10) {
+    			System.out.println("fail: folha incompleta");
+    			grafite.setTamanho(10);
+    		}
+    		grafite.setTamanho(grafite.getTamanho() - grafite.desgastePorFolha());
+    		
+    		if(grafite.getTamanho() == 10) {
+    			System.out.println("warning: grafite acabou");
+    		}
+    		if(grafite.getTamanho() < 10) {
+    		}
+
+    	}
+    }
+    
+    public String toString() {
+    	return String.format("calibre: " + this.calibre + ", grafite: " + grafite);
+    }
+    
+    
+}

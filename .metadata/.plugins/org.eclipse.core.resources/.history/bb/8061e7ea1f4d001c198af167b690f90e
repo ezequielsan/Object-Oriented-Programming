@@ -1,0 +1,8 @@
+package enumeracoes;
+
+enum Coin {
+	
+}
+public class CoinTest {
+
+}

@@ -1,0 +1,17 @@
+package relacionamentos;
+
+import java.util.ArrayList;
+
+public class Clube {
+	private ArrayList<Socio> sociedade;
+	
+	public Clube() {
+		this.sociedade = new ArrayList<>();
+	}
+	
+	public void addSocio(Socio socio) { 
+		if(socio == null) throw new RuntimeExcception()
+	}
+	
+
+}

@@ -1,0 +1,28 @@
+package relacionamentos;
+
+public class Socio {
+	private String nome;
+	
+	Socio(String nome) {
+		setNome(nome);
+	}
+	
+	public void setNome(String nome) { 
+		if(nome == null || nome.length() == 0) 
+			throw new RuntimeException("Nome não pode ser nulo ou vazio");
+		}
+		else 
+			this.nome = nome;
+	}
+	
+	public String toString() {
+		return this.nome;
+	}
+	
+	public static void main(String[] args) {
+		Socio socio1 = new Socio("Sara");
+		
+		System.out.println(socio1);
+	}
+
+}

@@ -1,0 +1,10 @@
+package relacionamentos;
+
+public class AppClube {
+	public static void main(String[] args) {
+		Clube seresteiros = new Clube();
+		
+		System.out.println(seresteiros);
+	}
+
+}
