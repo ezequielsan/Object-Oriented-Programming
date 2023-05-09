@@ -3,4 +3,4 @@ Repositório dos códigos da cadeira de fundamentos da programação. Aqui você
 
 * Códigos das aulas e exercícios
 * Códigos de estudos a parte
-* E códigos referentes a minhas aventuras e desvaneios na programação, 
+* E códigos referentes a minhas aventuras e desvaneios na programação
